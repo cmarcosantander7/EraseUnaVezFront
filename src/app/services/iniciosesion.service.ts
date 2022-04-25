@@ -7,7 +7,7 @@ import {Observable} from "rxjs";
   providedIn: 'root'
 })
 export class IniciosesionService {
-  private urlEndPoint:string='https://charming-melomakarona-12ccea.netlify.app/api/auth';
+  private urlEndPoint:string='https://eraseunavezz.herokuapp.com/api/auth';
 
   private httpHeaders = new HttpHeaders({'Content-Type':'application/json'})
 
