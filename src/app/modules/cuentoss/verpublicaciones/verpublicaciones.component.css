@@ -1,0 +1,65 @@
+.post-title {
+  font-size: 28px;
+  font-weight: bold;
+  opacity: 3;
+}
+
+.post-title:hover {
+  opacity: 0.6;
+}
+
+.subreddit-text {
+  font-weight: bold;
+}
+
+.post-url {
+  color: white;
+}
+
+.username{
+  color: white;
+}
+
+.post-text{
+  margin-top: 10px;
+}
+
+.post{
+  --post-line-color: #000701;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-image: url('src/assets/images/fondo.jpg');
+  color: white;
+  position: relative;
+  border-radius: 4px;
+  padding:5px;
+}
+
+.comment{
+  --post-line-color: #94c5ff;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,0.8);
+  color: #878A8C;
+  position: relative;
+  border-radius: 4px;
+  padding:5px;
+}
+/* Font color */
+input.mat-input-element {
+  color: white;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: orange;
+}
+.mat-form-field-outline,
+::placeholder {
+  color: orange !important;
+}
+img{
+  border-radius: 15px;
+  margin-left: 40%;
+}

@@ -1,0 +1,36 @@
+.example-card {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 7px 7px 60px #000;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px;
+  background-image: url('src/assets/images/fondo.jpg');
+}
+
+
+.im{
+  border-radius: 25px;
+  margin: 5px;
+}
+.example-header-image {
+  background-image: url('src/assets/images/fff.jpg');
+  background-size: cover;
+}
+body {
+  background-color: #ffdd90;
+  background-image: url('src/assets/images/fondo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  padding: 5px;
+
+}
+
+mat-card-title{
+  color: white;
+  font-family: "Comic Sans MS";
+}
+
+

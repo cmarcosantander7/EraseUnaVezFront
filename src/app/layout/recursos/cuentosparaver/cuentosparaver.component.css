@@ -1,0 +1,23 @@
+.example-card {
+  width: 50%;
+  height: 40%;
+  float: left;
+  margin-left: 27%;
+  margin-bottom: 10px;
+  border: 1px solid rgba(224, 180, 10, 0.7);
+  border-inline: 5px solid #0c3255;
+  writing-mode: horizontal-tb;
+  background: #0c3255;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-expansion-panel{
+  background: #0c3255;
+}
+
+h2{
+  color: white;
+}
+

@@ -1,0 +1,34 @@
+body {
+  background-color: #ffdd90;
+  background-image: url('src/assets/images/fondo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+}
+
+.form-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  width: 420px ;
+  padding: 50px 30px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 60px #000;
+
+}
+h1{
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: center;
+}
+mat-card-actions{
+  text-align: center;
+}
+
+
+
+

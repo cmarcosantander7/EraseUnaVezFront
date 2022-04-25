@@ -1,0 +1,83 @@
+
+
+
+<div class="container" *ngIf="issloading==false">
+  <div class="row">
+    <hr />
+    <div class="col-md-9">
+      <div class="row post">
+
+        <div class="col-md-11">
+          <span>
+            <br>
+           <mat-card-title>CUENTOS PUBLICADOS</mat-card-title>
+    <mat-form-field appearance="outline" style="width: 100%
+">
+      <mat-label></mat-label>
+      <input matInput   placeholder="FILTRAR" [formControl]="myControl">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+          </span>
+          <hr />
+
+          <div *ngIf="isexist">
+            <div *ngFor="let post of filteredOptions | async">
+
+          <mat-card-title style="margin-left: 45%">{{post.postName}}</mat-card-title>
+              <br><br>
+              <div>
+                <mat-card-subtitle style="color: orange">Autor: {{post.userName}}</mat-card-subtitle>
+              </div>
+      <div>
+
+
+
+        <div class="container row">
+          <div class="col-md-12">
+            <div *ngIf="retrievedImage" [style.background-image]="retrievedImage">
+              {{retrievedImage['image'] | json}}
+              <img [src]="retrievedImage" style="width: 300px; height: 230px" >
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+          <div>
+
+            <p style="text-align: justify" class="post-text" [innerHtml]="post.descripcion"></p>
+
+          </div>
+          <div class="post-comment">
+            <button style="color: orange" mat-menu-item [routerLink]="['/panel/cuentoss/agregarcomentarios',post.id,post.userId,post.userName]">
+              <mat-icon color="primary">edit</mat-icon>
+              <span >Agregar comentarios</span>
+            </button>
+
+          </div>
+          <div style="margin-top: 60px;" >
+            <div class="comment">
+              <p *ngFor="let act of post.comentarios">-->
+                 <strong>User:</strong> {{act.userName}}- <strong>Fecha:</strong>{{act.createdDate}}
+                 - <strong>Comentario:</strong> {{act.comentario}}
+            </div>
+            <hr />
+
+          </div>
+
+
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
+</div>
+</div>
