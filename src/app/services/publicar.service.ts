@@ -8,7 +8,7 @@ import {Image} from "../models/image";
   providedIn: 'root'
 })
 export class PublicarService {
-  private urlEndPoint:string='https://melodic-sorbet-256086.netlify.app/api/post';
+  private urlEndPoint:string='https://charming-melomakarona-12ccea.netlify.app/api/post';
 
   private httpHeaders = new HttpHeaders({'Content-Type':'application/json','Authorization':'Bearer '+JSON.parse(sessionStorage["user"]).token})
 

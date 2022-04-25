@@ -8,7 +8,7 @@ import {Categoria} from "../models/categoria";
   providedIn: 'root'
 })
 export class CategoriasService {
-  private urlEndPoint: string = 'https://melodic-sorbet-256086.netlify.app/api/subreddit';
+  private urlEndPoint: string = 'https://charming-melomakarona-12ccea.netlify.app/api/subreddit';
 
   private httpHeaders = new HttpHeaders({
     'Content-Type': 'application/json',
