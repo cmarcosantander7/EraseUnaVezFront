@@ -10,7 +10,7 @@ import {Image} from "../models/image";
 export class ImagenesService {
   private httpHeaders = new HttpHeaders({'Content-Type':'application/json','Authorization':'Bearer '+JSON.parse(sessionStorage["user"]).token})
 
-  private urlEndPoint: string = 'http://localhost:8080';
+  private urlEndPoint: string = 'https://melodic-sorbet-256086.netlify.app';
 
   constructor(private http: HttpClient) {
   }

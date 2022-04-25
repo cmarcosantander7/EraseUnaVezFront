@@ -7,7 +7,7 @@ import {Fecha} from "../models/fecha";
   providedIn: 'root'
 })
 export class FechaService {
-  private urlEndPoint:string='http://localhost:8080/api/fecha';
+  private urlEndPoint:string='https://melodic-sorbet-256086.netlify.app/api/fecha';
 
   private httpHeaders = new HttpHeaders({'Content-Type':'application/json','Authorization':'Bearer '+JSON.parse(sessionStorage['user']).token})
 
