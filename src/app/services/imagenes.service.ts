@@ -10,7 +10,7 @@ import {Image} from "../models/image";
 export class ImagenesService {
   private httpHeaders = new HttpHeaders({'Content-Type':'application/json','Authorization':'Bearer '+JSON.parse(sessionStorage["user"]).token})
 
-  private urlEndPoint: string = 'https://charming-melomakarona-12ccea.netlify.app';
+  private urlEndPoint: string = 'https://eraseunavezz.herokuapp.com';
 
   constructor(private http: HttpClient) {
   }

@@ -9,6 +9,7 @@ import {Observable} from "rxjs";
 export class IniciosesionService {
   private urlEndPoint:string='https://eraseunavezz.herokuapp.com/api/auth';
 
+
   private httpHeaders = new HttpHeaders({'Content-Type':'application/json'})
 
   constructor(private http:HttpClient) { }

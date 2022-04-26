@@ -7,7 +7,7 @@ import {Fecha} from "../models/fecha";
   providedIn: 'root'
 })
 export class FechaService {
-  private urlEndPoint:string='https://charming-melomakarona-12ccea.netlify.app/api/fecha';
+  private urlEndPoint:string='https://eraseunavezz.herokuapp.com/api/fecha';
 
   private httpHeaders = new HttpHeaders({'Content-Type':'application/json','Authorization':'Bearer '+JSON.parse(sessionStorage['user']).token})
 
